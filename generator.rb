@@ -22,7 +22,6 @@ puts "Possible categories: #{tests.keys.join(", ")}".magenta
 puts "Input your requests, separated by commas and spaces please"
 puts "Example input: " + "array: 2, recursion: 1, sort: 1".yellow
 input = gets.gsub(/\s/, '').split(",")
-debugger
 categoryrequests = Hash.new(0)
 input.each do |request|
   req = request.downcase.split(":")
@@ -39,13 +38,12 @@ categoryrequests.each do |category, num_problems|
   category_problems = tests[category]
   grouped_by_uses = category_problems.group_by { |problem| problem[:num_uses] }
                                      .sort_by { |num_uses, _| num_uses }
-  from_category = []
 
-  to_use = []
+  from_category = []
   grouped_by_uses.each do |_, problem_group|
     break if num_problems <= 0
     to_add = problem_group.sample(num_problems)
-    to_use += to_add unless to_add.empty?
+    from_category += to_add
     num_problems -= to_add.size
   end
 
@@ -56,8 +54,8 @@ categoryrequests.each do |category, num_problems|
     exit unless ans == 'c'
   end
 
-  to_use.each { |problem| problem[:num_uses] += 1 }
-  master += to_use
+  from_category.each { |problem| problem[:num_uses] += 1 }
+  master += from_category
 end
 
 practice_test = File.open("practice_test.rb", "w")
