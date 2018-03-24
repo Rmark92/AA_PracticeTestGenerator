@@ -24,17 +24,17 @@ recursion:
   :problem_file: problems/exponent.rb
   :spec_file: specs/exponent_spec.rb
   :solution_file: solutions/exponent_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: factorials_rec
   :problem_file: problems/factorials_rec.rb
   :spec_file: specs/factorials_rec_spec.rb
   :solution_file: solutions/factorials_rec_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: fibs_sum
   :problem_file: problems/fibs_sum.rb
   :spec_file: specs/fibs_sum_spec.rb
   :solution_file: solutions/fibs_sum_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: first_even_numbers_sum
   :problem_file: problems/first_even_numbers_sum.rb
   :spec_file: specs/first_even_numbers_sum_spec.rb
@@ -54,28 +54,28 @@ recursion:
   :problem_file: problems/string_include_key.rb
   :spec_file: specs/string_include_key_spec.rb
   :solution_file: solutions/string_include_key_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: subsets
   :problem_file: problems/subsets.rb
   :spec_file: specs/subsets_spec.rb
   :solution_file: solutions/subsets_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: rec_sum
   :problem_file: problems/rec_sum.rb
   :spec_file: specs/rec_sum_spec.rb
   :solution_file: solutions/rec_sum_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: permutations
   :problem_file: problems/permutations.rb
   :spec_file: specs/permutations_spec.rb
   :solution_file: solutions/permutations_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 array:
 - :name: binary_search
   :problem_file: problems/binary_search.rb
   :spec_file: specs/binary_search_spec.rb
   :solution_file: solutions/binary_search_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: dups
   :problem_file: problems/dups.rb
   :spec_file: specs/dups_spec.rb
@@ -85,17 +85,17 @@ array:
   :problem_file: problems/factors.rb
   :spec_file: specs/factors_spec.rb
   :solution_file: solutions/factors_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: median
   :problem_file: problems/median.rb
   :spec_file: specs/median_spec.rb
   :solution_file: solutions/median_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: my_flatten
   :problem_file: problems/my_flatten.rb
   :spec_file: specs/my_flatten_spec.rb
   :solution_file: solutions/my_flatten_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: my_join
   :problem_file: problems/my_join.rb
   :spec_file: specs/my_join_spec.rb
@@ -105,27 +105,27 @@ array:
   :problem_file: problems/my_merge.rb
   :spec_file: specs/my_merge_spec.rb
   :solution_file: solutions/my_merge_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: my_reverse
   :problem_file: problems/my_reverse.rb
   :spec_file: specs/my_reverse_spec.rb
   :solution_file: solutions/my_reverse_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: my_rotate
   :problem_file: problems/my_rotate.rb
   :spec_file: specs/my_rotate_spec.rb
   :solution_file: solutions/my_rotate_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: primes
   :problem_file: problems/primes.rb
   :spec_file: specs/primes_spec.rb
   :solution_file: solutions/primes_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: two_sum
   :problem_file: problems/two_sum.rb
   :spec_file: specs/two_sum_spec.rb
   :solution_file: solutions/two_sum_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 string:
 - :name: caesar_cipher
   :problem_file: problems/caesar_cipher.rb
@@ -203,19 +203,19 @@ sort:
   :problem_file: problems/jumble_sort.rb
   :spec_file: specs/jumble_sort_spec.rb
   :solution_file: solutions/jumble_sort_solution.rb
-  :num_uses: 2
+  :num_uses: 0
 - :name: merge_sort
   :problem_file: problems/merge_sort.rb
   :spec_file: specs/merge_sort_spec.rb
   :solution_file: solutions/merge_sort_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: quicksort
   :problem_file: problems/quicksort.rb
   :spec_file: specs/quicksort_spec.rb
   :solution_file: solutions/quicksort_solution.rb
-  :num_uses: 1
+  :num_uses: 0
 - :name: bubble_sort
   :problem_file: problems/bubble_sort.rb
   :spec_file: specs/bubble_sort_spec.rb
   :solution_file: solutions/bubble_sort_solution.rb
-  :num_uses: 1
+  :num_uses: 0

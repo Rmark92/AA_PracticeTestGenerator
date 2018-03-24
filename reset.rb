@@ -16,3 +16,6 @@ tests.each do |test|
 end
 
 File.open("list.yml", "w+") { |f| f.write(categories.to_yaml) }
+File.delete("solution.rb") if File.exist?("solution.rb")
+File.delete("spec.rb") if File.exist?("spec.rb")
+File.delete("practice_test.rb") if File.exist?("practice_test.rb")
