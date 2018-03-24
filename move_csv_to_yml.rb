@@ -11,6 +11,7 @@ tests.each do |test|
   new_entry[:problem_file] = test[:problemfile]
   new_entry[:spec_file] = test[:specfile]
   new_entry[:solution_file] = test[:solutionfile]
+  new_entry[:num_uses] = 0
   categories[test[:category]] << new_entry
 end
 
