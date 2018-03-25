@@ -16,10 +16,10 @@ puts "Good luck!"
 tests = YAML.load(File.read("list.yml"))
 
 # list category options
-puts "\nCategories/Attempts:"
+puts "\nCategories/Completed:"
 tests.each do |category, problems|
-  attempts = problems.inject(0) { |sum, problem| sum + problem[:num_uses] }
-  puts "#{category} => #{attempts}/#{problems.size}"
+  completed = problems.count { |problem| problem[:num_uses] > 0 }
+  puts "#{category} => #{completed}/#{problems.size}"
 end
 # puts "Possible categories: #{tests.keys.join(", ")}".magenta
 # get user requests
