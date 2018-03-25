@@ -16,10 +16,14 @@ puts "Good luck!"
 tests = YAML.load(File.read("list.yml"))
 
 # list category options
-
-puts "Possible categories: #{tests.keys.join(", ")}".magenta
+puts "\nCategories/Attempts:"
+tests.each do |category, problems|
+  attempts = problems.inject(0) { |sum, problem| sum + problem[:num_uses] }
+  puts "#{category} => #{attempts}/#{problems.size}"
+end
+# puts "Possible categories: #{tests.keys.join(", ")}".magenta
 # get user requests
-puts "Input your requests, separated by commas and spaces please"
+puts "\nInput your requests, separated by commas and spaces please"
 puts "Example input: " + "array: 2, recursion: 1, sort: 1".yellow
 input = gets.gsub(/\s/, '').split(",")
 categoryrequests = Hash.new(0)
